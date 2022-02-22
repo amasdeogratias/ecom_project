@@ -9,6 +9,8 @@ use App\Contracts\AttributeContract;
 use App\Repositories\AttributeRepository;
 use App\Contracts\BrandContract;
 use App\Repositories\BrandRepository;
+use App\Contracts\ProductContract;
+use App\Repositories\ProductRepository;
 
 class RepositoryServiceProvider extends ServiceProvider
 {
