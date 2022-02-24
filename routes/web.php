@@ -23,6 +23,7 @@ Route::post('/product/add/cart', 'Site\ProductController@addToCart')->name('prod
 Route::get('/cart', 'Site\CartController@getCart')->name('checkout.cart');
 Route::get('/cart/item/{id}/remove', 'Site\CartController@removeItem')->name('checkout.cart.remove');
 Route::get('/cart/clear', 'Site\CartController@clearCart')->name('checkout.cart.clear');
+Route::get('/', 'Site\ProductController@allProducts')->name('site.pages.homepage');
 
 
 

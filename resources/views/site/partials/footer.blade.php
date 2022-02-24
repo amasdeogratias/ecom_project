@@ -15,8 +15,8 @@
                 <aside class="col-sm-3  col-md-3 white">
                     <h5 class="title">My Account</h5>
                     <ul class="list-unstyled">
-                        <li> <a href="#"> User Login </a></li>
-                        <li> <a href="#"> User register </a></li>
+                        <li> <a href="{{ route('login') }}"> User Login </a></li>
+                        <li> <a href="{{ route('register') }}"> User register </a></li>
                         <li> <a href="#"> Account Setting </a></li>
                         <li> <a href="#"> My Orders </a></li>
                         <li> <a href="#"> My Wishlist </a></li>
@@ -58,15 +58,10 @@
             <br>
         </section>
         <section class="footer-bottom row border-top-white">
-            <div class="col-sm-6">
-                <p class="text-white-50"> Made with
-                    <3 <br> by Vosidiy M.</p>
-            </div>
-            <div class="col-sm-6">
-                <p class="text-md-right text-white-50">
-                    Copyright &copy
-                    <br>
-                    <a href="http://bootstrap-ecommerce.com" class="text-white-50">Bootstrap-ecommerce UI kit</a>
+            <div class="col-sm-12">
+                <p class="text-md-center text-white-50" style="text-align: center">
+                    <strong>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://127.0.0.1:8000/" target="_blank">Fixnet Group</a>.</strong>
+                    All rights reserved.
                 </p>
             </div>
         </section>

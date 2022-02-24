@@ -41,6 +41,17 @@ class ProductRepository extends BaseRepository implements ProductContract
     }
 
     /**
+     * @param string $order
+     * @param string $sort
+     * @param array $columns
+     * @return mixed
+     */
+    public function listAll(string $order = 'id', string $sort = 'desc', array $columns = ['*'])
+    {
+        return $this->all($columns, $order, $sort);
+    }
+
+    /**
      * @param int $id
      * @return mixed
      * @throws ModelNotFoundException

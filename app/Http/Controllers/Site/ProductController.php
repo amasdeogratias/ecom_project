@@ -39,4 +39,12 @@ class ProductController extends Controller
 
         return redirect()->back()->with('message', 'Item added to cart successfully.');
     }
+
+    public function allProducts()
+    {
+        $allProducts = $this->productRepository->listAll();
+        return view('site.pages.homepage', compact('allProducts'));
+    }
+
+
 }
