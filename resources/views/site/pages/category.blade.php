@@ -1,15 +1,15 @@
 @extends('site.app')
 @section('title', $category->name)
 @section('content')
-{{-- <section class="section-pagetop bg-dark">
+ <section class="section-pagetop bg-dark">
     <div class="container clearfix">
         <h2 class="title-page">{{ $category->name }}</h2>
     </div>
-</section> --}}
+</section>
 <section class="section-content bg padding-y">
     <div class="container">
         <div id="code_prod_complex">
-            <div class="row">
+            <div class="row text-black">
                 @forelse($category->products as $product)
                     <div class="col-md-4">
                         <figure class="card card-product">
